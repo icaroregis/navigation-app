@@ -4,7 +4,14 @@ import { View } from 'react-native';
 export default function StackLayout() {
   return (
     <View className="bg-white h-full">
-      <Stack screenOptions={{ headerShown: false }}>
+      <Stack
+        screenOptions={{
+          // headerShown: false
+          headerShadowVisible: false,
+          contentStyle: {
+            backgroundColor: 'white',
+          },
+        }}>
         <Stack.Screen
           name="home/index"
           options={{
