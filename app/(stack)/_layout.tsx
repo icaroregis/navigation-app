@@ -6,7 +6,6 @@ export default function StackLayout() {
     <View className="bg-white h-full">
       <Stack
         screenOptions={{
-          // headerShown: false
           headerShadowVisible: false,
           contentStyle: {
             backgroundColor: 'white',
@@ -22,6 +21,12 @@ export default function StackLayout() {
           name="products/index"
           options={{
             title: 'Produtos',
+          }}
+        />
+        <Stack.Screen
+          name="products/[id]/index"
+          options={{
+            title: 'Detalhes',
           }}
         />
         <Stack.Screen
