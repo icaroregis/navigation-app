@@ -6,7 +6,7 @@ export default function StackLayout() {
     <View className="bg-white h-full">
       <Stack
         screenOptions={{
-          headerShadowVisible: false,
+          headerShown: false,
           contentStyle: {
             backgroundColor: 'white',
           },

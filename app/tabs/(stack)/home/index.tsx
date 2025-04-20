@@ -8,26 +8,26 @@ export default function Home() {
       <CustomButton
         className="mt-4 mb-2"
         color="primary"
-        onPress={() => router.push('/products')}>
+        onPress={() => router.push('/tabs/(stack)/products')}>
         Produtos
       </CustomButton>
 
       <CustomButton
         className="mb-2"
         color="secondary"
-        onPress={() => router.push('/profile')}>
+        onPress={() => router.push('/tabs/(stack)/profile')}>
         Perfil
       </CustomButton>
 
       <CustomButton
         className="mb-2"
         color="tertiary"
-        onPress={() => router.push('/settings')}>
+        onPress={() => router.push('/tabs/(stack)/settings')}>
         Configurações
       </CustomButton>
 
       <Link
-        href="/products"
+        href="/tabs/(stack)/products"
         asChild>
         <CustomButton
           className="mb-10"
